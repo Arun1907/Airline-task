@@ -1,0 +1,97 @@
+body, html, ul, li, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-image: url('../../assets/head-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: rgba(47, 24, 252, 0.911); 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .navbar li {
+    margin: 0 2rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .hero-section {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .popular-places {
+    margin-top: 9rem;
+  }
+
+  @media(max-width:1027px){
+    .navbar {
+      gap: 30px;
+    }
+    .hero-section {
+      left: 35%;
+    }
+    .popular-places {
+      margin-top: 5rem;
+    }
+
+    @media(max-width:849px){
+      .navbar {
+        gap: 10px;
+        padding: 1rem 1rem;
+      }
+      .hero-section {
+        left: 35%;
+      }
+      .hero-section p {
+        margin-bottom: 0%;
+      }
+      .popular-places {
+        margin-top: 4rem;
+      }
+    }
+  }
+  
